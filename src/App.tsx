@@ -83,7 +83,7 @@ function App() {
       {/* Navbar */}
       <nav className="navbar navbar-dark" style={{ backgroundColor: "#2d5016" }}>
         <div className="container-fluid justify-content-center">
-          <span className="navbar-brand h1 mb-0">Welcome</span>
+          <span className="navbar-brand h1 mb-0">Budget Buddy</span>
         </div>
       </nav>
 
