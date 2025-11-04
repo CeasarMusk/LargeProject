@@ -26,7 +26,6 @@ function App() {
     setSuccess("");
     setLoading(true);
 
-    // Basic validation
     if (!email || !password) {
       setError("Please fill in all fields");
       setLoading(false);
@@ -40,39 +39,23 @@ function App() {
     }
 
     try {
-      if (isLogin) {
-        // Handle login
-        const result = await login({ email, password });
-        
-        if (result.success) {
-          setSuccess("Login successful!");
-          console.log("User logged in with ID:", result.userId);
-          // Redirect to dashboard or home page here
-          // window.location.href = '/dashboard';
-        } else {
-          setError(result.message || "Login failed");
-        }
+      const result = isLogin
+        ? await login({ email, password })
+        : await register({ email, password });
+
+      if (result.success) {
+        setSuccess(isLogin ? "Login successful!" : "Account created successfully!");
+        console.log("User ID:", result.userId);
+        // ✅ Redirect to the budget page after success
+        setTimeout(() => {
+          window.location.href = "/budget";
+        }, 1000);
       } else {
-        // Handle registration
-        const result = await register({ email, password });
-        
-        if (result.success) {
-          setSuccess("Account created successfully! You can now login.");
-          console.log("New user created with ID (Primary Key):", result.userId);
-          // Optionally switch to login form
-          setTimeout(() => {
-            setIsLogin(true);
-            setEmail("");
-            setPassword("");
-            setSuccess("");
-          }, 2000);
-        } else {
-          setError(result.message || "Registration failed");
-        }
+        setError(result.message || "Operation failed");
       }
     } catch (err) {
-      setError("An unexpected error occurred");
       console.error(err);
+      setError("An unexpected error occurred");
     } finally {
       setLoading(false);
     }
@@ -92,7 +75,6 @@ function App() {
         <div className="card shadow-sm p-4" style={{ maxWidth: "400px", width: "100%" }}>
           <h3 className="text-center mb-4">{isLogin ? "Login" : "Register"}</h3>
 
-          {/* Error Alert */}
           {error && (
             <div className="alert alert-danger alert-dismissible fade show" role="alert">
               {error}
@@ -100,7 +82,6 @@ function App() {
             </div>
           )}
 
-          {/* Success Alert */}
           {success && (
             <div className="alert alert-success alert-dismissible fade show" role="alert">
               {success}
@@ -111,35 +92,35 @@ function App() {
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Email address</label>
-              <input 
-                type="email" 
-                className="form-control" 
-                id="email" 
-                placeholder="Enter email" 
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                placeholder="Enter email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required 
+                required
                 disabled={loading}
               />
             </div>
 
             <div className="mb-3">
               <label htmlFor="password" className="form-label">Password</label>
-              <input 
-                type="password" 
-                className="form-control" 
-                id="password" 
-                placeholder="Password" 
+              <input
+                type="password"
+                className="form-control"
+                id="password"
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required 
+                required
                 disabled={loading}
               />
             </div>
 
-            <button 
-              type="submit" 
-              className="btn w-100 mb-3" 
+            <button
+              type="submit"
+              className="btn w-100 mb-3"
               style={{ backgroundColor: "#2d5016", color: "white" }}
               disabled={loading}
             >
