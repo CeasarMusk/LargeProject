@@ -1,0 +1,1467 @@
+Script started on 2025-11-15 03:04:50+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7msudo find /var/www -type f -name "app.js"[27m
+[K[A[10C[27ms[27mu[27md[27mo[27m [27mf[27mi[27mn[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m [27m-[27mt[27my[27mp[27me[27m [27mf[27m [27m-[27mn[27ma[27mm[27me[27m [27m"[27ma[27mp[27mp[27m.[27mj[27ms[27m"[1B[K[?1l>[?2004l
+]2;sudo find /var/www -type f -name "app.js"]1;find/var/www/backup/server/src/app.js
+/var/www/server/src/app.js
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 stop all[27m
+[7mpm2 delete all[27m[K
+[7mpm2 save[27m[K
+[K[3A[10C[27mp[27mm[27m2[27m [27ms[27mt[27mo[27mp[27m [27ma[27ml[27ml[1B[27mp[27mm[27m2[27m [27md[27me[27ml[27me[27mt[27me[27m [27ma[27ml[27ml[1B[27mp[27mm[27m2[27m [27ms[27ma[27mv[27me[1B[K[?1l>[?2004l
+]2;pm2 stop all; pm2 delete all; pm2 save]1;pm2[32m[PM2] [39mApplying action stopProcessId on app [all](ids: [ 0 ])
+[32m[PM2] [39m[all](0) ✓
+[90m┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐[39m
+[90m│[39m[1m[36m id [39m[22m[90m│[39m[1m[36m name               [39m[22m[90m│[39m[1m[36m mode     [39m[22m[90m│[39m[1m[36m ↺    [39m[22m[90m│[39m[1m[36m status    [39m[22m[90m│[39m[1m[36m cpu      [39m[22m[90m│[39m[1m[36m memory   [39m[22m[90m│[39m
+[90m├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤[39m
+[90m│[39m[1m[36m [1m[36m0[39m[36m[22m[1m  [39m[22m[90m│[39m backend            [90m│[39m [7m[1mfork[22m[27m     [90m│[39m 15   [90m│[39m [31m[1mstopped[22m[39m   [90m│[39m 0%       [90m│[39m 0b       [90m│[39m
+[90m└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘[39m
+[32m[PM2] [39mApplying action deleteProcessId on app [all](ids: [ 0 ])
+[32m[PM2] [39m[backend](0) ✓
+[90m┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐[39m
+[90m│[39m[1m[36m id [39m[22m[90m│[39m[1m[36m name               [39m[22m[90m│[39m[1m[36m mode     [39m[22m[90m│[39m[1m[36m ↺    [39m[22m[90m│[39m[1m[36m status    [39m[22m[90m│[39m[1m[36m cpu      [39m[22m[90m│[39m[1m[36m memory   [39m[22m[90m│[39m
+[90m└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘[39m
+[32m[PM2] [39mSaving current process list...
+[33m[PM2][WARN] [39mPM2 is not managing any process, skipping save...
+[33m[PM2][WARN] [39mTo force saving use: pm2 save --force
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 status[27m
+[K[A[10C[27mp[27mm[27m2[27m [27ms[27mt[27ma[27mt[27mu[27ms[1B[K[?1l>[?2004l
+]2;pm2 status]1;pm2[90m┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐[39m
+[90m│[39m[1m[36m id [39m[22m[90m│[39m[1m[36m name               [39m[22m[90m│[39m[1m[36m mode     [39m[22m[90m│[39m[1m[36m ↺    [39m[22m[90m│[39m[1m[36m status    [39m[22m[90m│[39m[1m[36m cpu      [39m[22m[90m│[39m[1m[36m memory   [39m[22m[90m│[39m
+[90m└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘[39m
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mcd /var/www/server[27m
+[7mpm2 start src/app.js --name backend[27m[K
+[K[A[A[10C[27mc[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27ms[27me[27mr[27mv[27me[27mr[1B[27mp[27mm[27m2[27m [27ms[27mt[27ma[27mr[27mt[27m [27ms[27mr[27mc[27m/[27ma[27mp[27mp[27m.[27mj[27ms[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[K[?1l>[?2004l
+]2;cd /var/www/server; pm2 start src/app.js --name backend]1;cd[32m[PM2] [39mStarting /var/www/server/src/app.js in fork_mode (1 instance)
+[32m[PM2] [39mDone.
+[90m┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐[39m
+[90m│[39m[1m[36m id [39m[22m[90m│[39m[1m[36m name               [39m[22m[90m│[39m[1m[36m mode     [39m[22m[90m│[39m[1m[36m ↺    [39m[22m[90m│[39m[1m[36m status    [39m[22m[90m│[39m[1m[36m cpu      [39m[22m[90m│[39m[1m[36m memory   [39m[22m[90m│[39m
+[90m├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤[39m
+[90m│[39m[1m[36m [1m[36m0[39m[36m[22m[1m  [39m[22m[90m│[39m backend            [90m│[39m [7m[1mfork[22m[27m     [90m│[39m 0    [90m│[39m [32m[1monline[22m[39m    [90m│[39m 0%       [90m│[39m 776.0kb  [90m│[39m
+[90m└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘[39m
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 logs backend[27m
+[K[A[10C[27mp[27mm[27m2[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[K[?1l>[?2004l
+]2;pm2 logs backend]1;pm2[1m[90m[TAILING] Tailing last 15 lines for [backend] process (change the value with --lines option)[39m[22m
+[90m/root/.pm2/logs/backend-out.log last 15 lines:[39m
+[32m0|backend  | [39m[dotenv@17.2.3] injecting env (1) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[32m0|backend  | [39mAPI running on port 5000
+[32m0|backend  | [39mMongoDB Connected
+[32m0|backend  | [39m[dotenv@17.2.3] injecting env (1) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[32m0|backend  | [39m✅ API running on port 5000
+[32m0|backend  | [39mMongoDB Connected
+[32m0|backend  | [39m[dotenv@17.2.3] injecting env (1) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[32m0|backend  | [39m✅ API running on port 5000
+[32m0|backend  | [39mMongoDB Connected
+
+[90m/root/.pm2/logs/backend-error.log last 15 lines:[39m
+[31m0|backend  | [39m    at listenInCluster (node:net:1997:12)
+[31m0|backend  | [39m    at Server.listen (node:net:2102:7)
+[31m0|backend  | [39m    at Function.listen (/var/www/server/node_modules/express/lib/application.js:635:24)
+[31m0|backend  | [39m    at /var/www/server/src/app.js:50:7
+[31m0|backend  | [39m    at Object.<anonymous> (/var/www/server/src/app.js:55:3)
+[31m0|backend  | [39m    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+[31m0|backend  | [39m    at Object..js (node:internal/modules/cjs/loader:1839:10)
+[31m0|backend  | [39m    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[31m0|backend  | [39m    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+[31m0|backend  | [39m  code: 'EADDRINUSE',
+[31m0|backend  | [39m  errno: -98,
+[31m0|backend  | [39m  syscall: 'listen',
+[31m0|backend  | [39m  address: '::',
+[31m0|backend  | [39m  port: 8000
+[31m0|backend  | [39m}
+
+[31m0|backend  | [39mError: listen EADDRINUSE: address already in use :::8000
+[31m0|backend  | [39m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[31m0|backend  | [39m    at listenInCluster (node:net:1997:12)
+[31m0|backend  | [39m    at Server.listen (node:net:2102:7)
+[31m0|backend  | [39m    at Function.listen (/var/www/server/node_modules/express/lib/application.js:635:24)
+[31m0|backend  | [39m    at /var/www/server/src/app.js:50:7
+[31m0|backend  | [39m    at Object.<anonymous> (/var/www/server/src/app.js:55:3)
+[31m0|backend  | [39m    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+[31m0|backend  | [39m    at Object..js (node:internal/modules/cjs/loader:1839:10)
+[31m0|backend  | [39m    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[31m0|backend  | [39m    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+[31m0|backend  | [39m  code: 'EADDRINUSE',
+[31m0|backend  | [39m  errno: -98,
+[31m0|backend  | [39m  syscall: 'listen',
+[31m0|backend  | [39m  address: '::',
+[31m0|backend  | [39m  port: 8000
+[31m0|backend  | [39m}
+[31m0|backend  | [39mError: listen EADDRINUSE: address already in use :::8000
+[31m0|backend  | [39m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[31m0|backend  | [39m    at listenInCluster (node:net:1997:12)
+[31m0|backend  | [39m    at Server.listen (node:net:2102:7)
+[31m0|backend  | [39m    at Function.listen (/var/www/server/node_modules/express/lib/application.js:635:24)
+[31m0|backend  | [39m    at /var/www/server/src/app.js:50:7
+[31m0|backend  | [39m    at Object.<anonymous> (/var/www/server/src/app.js:55:3)
+[31m0|backend  | [39m    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+[31m0|backend  | [39m    at Object..js (node:internal/modules/cjs/loader:1839:10)
+[31m0|backend  | [39m    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[31m0|backend  | [39m    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+[31m0|backend  | [39m  code: 'EADDRINUSE',
+[31m0|backend  | [39m  errno: -98,
+[31m0|backend  | [39m  syscall: 'listen',
+[31m0|backend  | [39m  address: '::',
+[31m0|backend  | [39m  port: 8000
+[31m0|backend  | [39m}
+[31m0|backend  | [39mError: listen EADDRINUSE: address already in use :::8000
+[31m0|backend  | [39m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[31m0|backend  | [39m    at listenInCluster (node:net:1997:12)
+[31m0|backend  | [39m    at Server.listen (node:net:2102:7)
+[31m0|backend  | [39m    at Function.listen (/var/www/server/node_modules/express/lib/application.js:635:24)
+[31m0|backend  | [39m    at /var/www/server/src/app.js:50:7
+[31m0|backend  | [39m    at Object.<anonymous> (/var/www/server/src/app.js:55:3)
+[31m0|backend  | [39m    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+[31m0|backend  | [39m    at Object..js (node:internal/modules/cjs/loader:1839:10)
+[31m0|backend  | [39m    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[31m0|backend  | [39m    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+[31m0|backend  | [39m  code: 'EADDRINUSE',
+[31m0|backend  | [39m  errno: -98,
+[31m0|backend  | [39m  syscall: 'listen',
+[31m0|backend  | [39m  address: '::',
+[31m0|backend  | [39m  port: 8000
+[31m0|backend  | [39m}
+[31m0|backend  | [39mError: listen EADDRINUSE: address already in use :::8000
+[31m0|backend  | [39m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[31m0|backend  | [39m    at listenInCluster (node:net:1997:12)
+[31m0|backend  | [39m    at Server.listen (node:net:2102:7)
+[31m0|backend  | [39m    at Function.listen (/var/www/server/node_modules/express/lib/application.js:635:24)
+[31m0|backend  | [39m    at /var/www/server/src/app.js:50:7
+[31m0|backend  | [39m    at Object.<anonymous> (/var/www/server/src/app.js:55:3)
+[31m0|backend  | [39m    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+[31m0|backend  | [39m    at Object..js (node:internal/modules/cjs/loader:1839:10)
+[31m0|backend  | [39m    at Module.load (node:internal/modules/cjs/loader:1441:32)
+[31m0|backend  | [39m    at Function._load (node:internal/modules/cjs/loader:1263:12) {
+[31m0|backend  | [39m  code: 'EADDRINUSE',
+[31m0|backend  | [39m  errno: -98,
+[31m0|backend  | [39m  syscall: 'listen',
+[31m0|backend  | [39m  address: '::',
+[31m0|backend  | [39m  port: 8000
+[31m0|backend  | [39m}
+^C
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;31m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 describe backend | grep "script path"[27m
+[7mpm2 describe backend | grep cwd[27m[K
+[K[A[A[10C[27mp[27mm[27m2[27m [27md[27me[27ms[27mc[27mr[27mi[27mb[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m"[27ms[27mc[27mr[27mi[27mp[27mt[27m [27mp[27ma[27mt[27mh[27m"[1B[27mp[27mm[27m2[27m [27md[27me[27ms[27mc[27mr[27mi[27mb[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27mc[27mw[27md[1B[K[?1l>[?2004l
+]2;pm2 describe backend | grep --color=auto  "script path"; pm2 describe backend]1;pm2│ [01;31m[Kscript path[m[K       │ /var/www/server/src/app.js        │
+│ exec [01;31m[Kcwd[m[K          │ /var/www/server                   │
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7msudo sed -n '1,140p' /var/www/server/src/app.js[27m
+[K[A[10C[27ms[27mu[27md[27mo[27m [27ms[27me[27md[27m [27m-[27mn[27m [27m'[27m1[27m,[27m1[27m4[27m0[27mp[27m'[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27ms[27me[27mr[27mv[27me[27mr[27m/[27ms[27mr[27mc[27m/[27ma[27mp[27mp[27m.[27mj[27ms[1B[K[?1l>[?2004l
+]2;sudo sed -n '1,140p' /var/www/server/src/app.js]1;sed// /var/www/server/src/app.js
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const { ensureIndexes } = require('./lib/mongo');
+
+const app = express();
+app.set('trust proxy', true);
+app.use(cors());
+app.use(express.json());
+
+// Simple request log
+app.use((req, _res, next) => { console.log(req.method, req.url); next(); });
+
+// Health
+app.get('/health', (_req, res) => res.json({ ok: 1 }));
+
+// Routes
+app.use('/api/register',           require('./routes/register'));
+app.use('/api/login',              require('./routes/login'));
+
+// Primary email verification mount
+const emailVerificationRouter = require('./routes/emailVerification');
+app.use('/api/email-verification', emailVerificationRouter);
+
+// ✅ Alias mounts (handle old links & typos WITHOUT redirect)
+app.use('/api/emailverification',  emailVerificationRouter);  // no hyphen
+app.use('/EmailVerification.php',  emailVerificationRouter);  // legacy PHP path
+app.use('/email-verification',     emailVerificationRouter);  // non-API direct hit
+app.use('/emailverification',      emailVerificationRouter);  // non-API, no hyphen
+
+app.use('/api/password',           require('./routes/password'));
+app.use('/api/transactions',       require('./routes/transactions'));
+app.use('/api/budgets',            require('./routes/budgets'));
+app.use('/api/summary',            require('./routes/summary'));
+app.use('/api/users',              require('./routes/users'));
+
+// 404 JSON
+app.use((req, res) => res.status(404).json({ error: 'Not found' }));
+
+// Error handler
+app.use((err, _req, res, _next) => {
+  console.error('ERR', err);
+  const status = err.statusCode || err.status || 500;
+  res.status(status).json({ error: err?.message || 'Server error' });
+});
+
+const port = process.env.PORT || 5000;
+(async () => {
+  app.listen(port, () => console.log(`API running on :${port}`));
+  try { await ensureIndexes(); console.log('DB connected & indexes ensured'); }
+  catch (err) { console.error('DB init failed:', err?.message || err); }
+  process.on('unhandledRejection', e => console.error('unhandledRejection', e));
+  process.on('uncaughtException',  e => console.error('uncaughtException', e));
+})();
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mprintenv | grep PORT[27m
+[K[A[10C[27mp[27mr[27mi[27mn[27mt[27me[27mn[27mv[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27mP[27mO[27mR[27mT[1B[K[?1l>[?2004l
+]2;printenv | grep --color=auto  PORT]1;printenv[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;31m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 env backend | grep PORT[27m
+[K[A[10C[27mp[27mm[27m2[27m [27me[27mn[27mv[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27mP[27mO[27mR[27mT[1B[K[?1l>[?2004l
+]2;pm2 env backend | grep --color=auto  PORT]1;pm2[PM2][ERROR] Modules with id backend not found
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;31m➜  [36mserver[00m [K[?1h=[?2004h[7msudo sed -n '1,200p' /var/www/server/.env[27m
+[K[A[10C[27ms[27mu[27md[27mo[27m [27ms[27me[27md[27m [27m-[27mn[27m [27m'[27m1[27m,[27m2[27m0[27m0[27mp[27m'[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27ms[27me[27mr[27mv[27me[27mr[27m/[27m.[27me[27mn[27mv[1B[K[?1l>[?2004l
+]2;sudo sed -n '1,200p' /var/www/server/.env]1;sed# Server
+PORT=8000
+NODE_ENV=production
+
+# MongoDB
+MDB_USER=API
+MDB_PASS=2LvVIMrV1BUXzVcO
+DB_NAME=LargeProject
+MDB_HOST=simplesite.s1xesvx.mongodb.net
+
+# SendGrid
+SENDGRID_API_KEY=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
+FROM_EMAIL=tropicalehaven@gmail.com
+FROM_NAME=LargeProject
+
+# Email link targets
+VERIFY_BASE_URL=http://64.225.25.63:8000/api/email-verification
+RESET_BASE_URL=
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mpm2 restart backend[27m
+[K[A[10C[27mp[27mm[27m2[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[K[?1l>[?2004l
+]2;pm2 restart backend]1;pm2[1m[34mUse --update-env to update environment variables[39m[22m
+[32m[PM2] [39mApplying action restartProcessId on app [backend](ids: [ 0 ])
+[32m[PM2] [39m[backend](0) ✓
+[90m┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐[39m
+[90m│[39m[1m[36m id [39m[22m[90m│[39m[1m[36m name               [39m[22m[90m│[39m[1m[36m mode     [39m[22m[90m│[39m[1m[36m ↺    [39m[22m[90m│[39m[1m[36m status    [39m[22m[90m│[39m[1m[36m cpu      [39m[22m[90m│[39m[1m[36m memory   [39m[22m[90m│[39m
+[90m├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤[39m
+[90m│[39m[1m[36m [1m[36m0[39m[36m[22m[1m  [39m[22m[90m│[39m backend            [90m│[39m [7m[1mfork[22m[27m     [90m│[39m 15   [90m│[39m [32m[1monline[22m[39m    [90m│[39m 0%       [90m│[39m 12.0mb   [90m│[39m
+[90m└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘[39m
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mcurl http://localhost:5000/health[27m
+[K[A[10C[27mc[27mu[27mr[27ml[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m5[27m0[27m0[27m0[27m/[27mh[27me[27ma[27ml[27mt[27mh[1B[K[?1l>[?2004l
+]2;curl http://localhost:5000/health]1;curl{"ok":1}[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mcurl https://somethingsimple.site/api/health[27m
+[K[A[10C[27mc[27mu[27mr[27ml[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ms[27mo[27mm[27me[27mt[27mh[27mi[27mn[27mg[27ms[27mi[27mm[27mp[27ml[27me[27m.[27ms[27mi[27mt[27me[27m/[27ma[27mp[27mi[27m/[27mh[27me[27ma[27ml[27mt[27mh[1B[K[?1l>[?2004l
+]2;curl https://somethingsimple.site/api/health]1;curl{"ok":1}[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mcd /var/www/LargeProject/client[27m
+[7mnpm install[27m[K
+[K[A[A[10C[27mc[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27mL[27ma[27mr[27mg[27me[27mP[27mr[27mo[27mj[27me[27mc[27mt[27m/[27mc[27ml[27mi[27me[27mn[27mt[1B[27mn[27mp[27mm[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[1B[K[?1l>[?2004l
+]2;cd /var/www/LargeProject/client; npm install]1;cdcd: no such file or directory: /var/www/LargeProject/client
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦c[1G[0K
+up to date, audited 180 packages in 1s
+[1G[0K⠦[1G[0K
+[1G[0K⠦[1G[0K24 packages are looking for funding
+[1G[0K⠦[1G[0K  run `npm fund` for details
+[1G[0K⠦[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠦[1G[0K[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www]1;/var/www[0m[27m[24m[J[01;32m➜  [36mwww[00m [K[?1h=[?2004h[7mcd /var/www/LargeProject/client[27m
+[7mnpm install[27m[K
+[K[A[A[7C[27mc[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27mL[27ma[27mr[27mg[27me[27mP[27mr[27mo[27mj[27me[27mc[27mt[27m/[27mc[27ml[27mi[27me[27mn[27mt[1B[27mn[27mp[27mm[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[1B[K[?1l>[?2004l
+]2;cd /var/www/LargeProject/client; npm install]1;cdcd: no such file or directory: /var/www/LargeProject/client
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m ENOENT
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94msyscall[39m open
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mpath[39m /var/www/package.json
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94merrno[39m [33m-2[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94menoent[39m Could not read package.json: Error: ENOENT: no such file or directory, open '/var/www/package.json'
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94menoent[39m This is related to npm not being able to find a file.
+[1mnpm[22m [31merror[39m [94menoent[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m A complete log of this run can be found in: /root/.npm/_logs/2025-11-15T03_09_43_596Z-debug-0.log
+[1G[0K⠙[1G[0K[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www]1;/var/www[0m[27m[24m[J[01;31m➜  [36mwww[00m [K[?1h=[?2004hccd LargeProject[1m/[0m[0m             client[1m/[0m[0m [?1l>[?2004l
+]2;cd client]1;cd[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/client]1;/var/www/client[0m[27m[24m[J[01;32m➜  [36mclient[00m [K[?1h=[?2004h[7mnpm install[27m
+[K[A[10C[27mn[27mp[27mm[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[1B[K[?1l>[?2004l
+]2;npm install]1;npm[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m ENOENT
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94msyscall[39m open
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mpath[39m /var/www/client/package.json
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94merrno[39m [33m-2[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94menoent[39m Could not read package.json: Error: ENOENT: no such file or directory, open '/var/www/client/package.json'
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94menoent[39m This is related to npm not being able to find a file.
+[1mnpm[22m [31merror[39m [94menoent[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m A complete log of this run can be found in: /root/.npm/_logs/2025-11-15T03_10_20_864Z-debug-0.log
+[1G[0K⠙[1G[0K[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/client]1;/var/www/client[0m[27m[24m[J[01;31m➜  [36mclient[00m [K[?1h=[?2004h[7msudo find /var/www -type f -name "package.json"[27m
+[K[A[10C[27ms[27mu[27md[27mo[27m [27mf[27mi[27mn[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m [27m-[27mt[27my[27mp[27me[27m [27mf[27m [27m-[27mn[27ma[27mm[27me[27m [27m"[27mp[27ma[27mc[27mk[27ma[27mg[27me[27m.[27mj[27ms[27mo[27mn[27m"[1B[K[?1l>[?2004l
+]2;sudo find /var/www -type f -name "package.json"]1;find/var/www/backup/node_modules/cross-spawn/node_modules/which/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/isexe/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/path-key/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/shebang-command/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/shebang-regex/package.json
+/var/www/backup/node_modules/cross-spawn/package.json
+/var/www/backup/node_modules/eslint/package.json
+/var/www/backup/node_modules/escape-string-regexp/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flat-cache/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/keyv/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/json-buffer/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flatted/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flatted/cjs/package.json
+/var/www/backup/node_modules/file-entry-cache/package.json
+/var/www/backup/node_modules/@esbuild/linux-x64/package.json
+/var/www/backup/node_modules/picocolors/package.json
+/var/www/backup/node_modules/espree/node_modules/acorn/package.json
+/var/www/backup/node_modules/espree/node_modules/acorn-jsx/package.json
+/var/www/backup/node_modules/espree/package.json
+/var/www/backup/node_modules/react-dom/package.json
+/var/www/backup/node_modules/csstype/package.json
+/var/www/backup/node_modules/is-glob/node_modules/is-extglob/package.json
+/var/www/backup/node_modules/is-glob/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.scandir/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.walk/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.stat/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/queue-microtask/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/project-service/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/tsconfig-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fastq/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/semver/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/micromatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fill-range/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/merge2/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/braces/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/commonjs/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/esm/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/to-regex-range/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/picomatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/balanced-match/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/ts-api-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/is-number/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/reusify/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/run-parallel/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/type-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/ignore/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/ts-api-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/graphemer/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/package.json
+/var/www/backup/node_modules/tailwindcss/package.json
+/var/www/backup/node_modules/debug/node_modules/ms/package.json
+/var/www/backup/node_modules/debug/package.json
+/var/www/backup/node_modules/find-up/node_modules/locate-path/package.json
+/var/www/backup/node_modules/find-up/node_modules/path-exists/package.json
+/var/www/backup/node_modules/find-up/node_modules/yocto-queue/package.json
+/var/www/backup/node_modules/find-up/node_modules/p-locate/package.json
+/var/www/backup/node_modules/find-up/node_modules/p-limit/package.json
+/var/www/backup/node_modules/find-up/package.json
+/var/www/backup/node_modules/normalize-range/package.json
+/var/www/backup/node_modules/autoprefixer/package.json
+/var/www/backup/node_modules/esutils/package.json
+/var/www/backup/node_modules/eslint-visitor-keys/package.json
+/var/www/backup/node_modules/typescript-eslint/package.json
+/var/www/backup/node_modules/@eslint/js/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/type-check/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/levn/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/prelude-ls/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/resolve-from/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/globals/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/import-fresh/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/callsites/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/argparse/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/parent-module/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/strip-json-comments/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/js-yaml/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/package.json
+/var/www/backup/node_modules/@eslint/core/node_modules/@types/json-schema/package.json
+/var/www/backup/node_modules/@eslint/core/package.json
+/var/www/backup/node_modules/@eslint/config-helpers/package.json
+/var/www/backup/node_modules/@eslint/config-array/node_modules/@eslint/object-schema/package.json
+/var/www/backup/node_modules/@eslint/config-array/package.json
+/var/www/backup/node_modules/postcss-value-parser/package.json
+/var/www/backup/node_modules/bootstrap/package.json
+/var/www/backup/node_modules/undici-types/package.json
+/var/www/backup/node_modules/fast-deep-equal/package.json
+/var/www/backup/node_modules/lodash.merge/package.json
+/var/www/backup/node_modules/ignore/package.json
+/var/www/backup/node_modules/@types/react-dom/package.json
+/var/www/backup/node_modules/@types/node/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/parser/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/types/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/helper-validator-identifier/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/helper-string-parser/package.json
+/var/www/backup/node_modules/@types/babel__core/package.json
+/var/www/backup/node_modules/@types/estree/package.json
+/var/www/backup/node_modules/@types/react/package.json
+/var/www/backup/node_modules/ajv/node_modules/punycode/package.json
+/var/www/backup/node_modules/ajv/node_modules/uri-js/package.json
+/var/www/backup/node_modules/ajv/node_modules/json-schema-traverse/package.json
+/var/www/backup/node_modules/ajv/node_modules/fast-json-stable-stringify/package.json
+/var/www/backup/node_modules/ajv/package.json
+/var/www/backup/node_modules/fraction.js/package.json
+/var/www/backup/node_modules/esquery/node_modules/estraverse/package.json
+/var/www/backup/node_modules/esquery/package.json
+/var/www/backup/node_modules/eslint-plugin-react-hooks/package.json
+/var/www/backup/node_modules/@rollup/rollup-linux-x64-musl/package.json
+/var/www/backup/node_modules/@rollup/rollup-linux-x64-gnu/package.json
+/var/www/backup/node_modules/@vitejs/plugin-react/package.json
+/var/www/backup/node_modules/natural-compare/package.json
+/var/www/backup/node_modules/scheduler/package.json
+/var/www/backup/node_modules/@rolldown/pluginutils/package.json
+/var/www/backup/node_modules/globals/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/async/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/url-alphabet/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/non-secure/package.json
+/var/www/backup/node_modules/postcss/node_modules/source-map-js/package.json
+/var/www/backup/node_modules/postcss/package.json
+/var/www/backup/node_modules/glob-parent/package.json
+/var/www/backup/node_modules/chalk/node_modules/supports-color/package.json
+/var/www/backup/node_modules/chalk/node_modules/color-convert/package.json
+/var/www/backup/node_modules/chalk/node_modules/has-flag/package.json
+/var/www/backup/node_modules/chalk/node_modules/ansi-styles/package.json
+/var/www/backup/node_modules/chalk/node_modules/color-name/package.json
+/var/www/backup/node_modules/chalk/package.json
+/var/www/backup/node_modules/@eslint-community/regexpp/package.json
+/var/www/backup/node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/package.json
+/var/www/backup/node_modules/@eslint-community/eslint-utils/package.json
+/var/www/backup/node_modules/@humanwhocodes/module-importer/package.json
+/var/www/backup/node_modules/@humanwhocodes/retry/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/jsesc/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/remapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/trace-mapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/gen-mapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/sourcemap-codec/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/resolve-uri/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/js-tokens/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/lru-cache/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/semver/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/yallist/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/traverse/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/generator/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-module-transforms/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-globals/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/parser/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-module-imports/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/types/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/compat-data/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-validator-identifier/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-validator-option/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/template/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-string-parser/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/code-frame/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-compilation-targets/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helpers/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/gensync/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/convert-source-map/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/json5/package.json
+/var/www/backup/node_modules/@babel/core/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-self/node_modules/@babel/helper-plugin-utils/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-self/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-source/node_modules/@babel/helper-plugin-utils/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-source/package.json
+/var/www/backup/node_modules/react-refresh/package.json
+/var/www/backup/node_modules/minimatch/node_modules/brace-expansion/package.json
+/var/www/backup/node_modules/minimatch/node_modules/concat-map/package.json
+/var/www/backup/node_modules/minimatch/node_modules/balanced-match/package.json
+/var/www/backup/node_modules/minimatch/package.json
+/var/www/backup/node_modules/optionator/node_modules/type-check/package.json
+/var/www/backup/node_modules/optionator/node_modules/fast-levenshtein/package.json
+/var/www/backup/node_modules/optionator/node_modules/deep-is/package.json
+/var/www/backup/node_modules/optionator/node_modules/word-wrap/package.json
+/var/www/backup/node_modules/optionator/node_modules/levn/package.json
+/var/www/backup/node_modules/optionator/node_modules/prelude-ls/package.json
+/var/www/backup/node_modules/optionator/package.json
+/var/www/backup/node_modules/typescript/package.json
+/var/www/backup/node_modules/browserslist/node_modules/baseline-browser-mapping/package.json
+/var/www/backup/node_modules/browserslist/node_modules/escalade/package.json
+/var/www/backup/node_modules/browserslist/node_modules/update-browserslist-db/package.json
+/var/www/backup/node_modules/browserslist/node_modules/node-releases/package.json
+/var/www/backup/node_modules/browserslist/node_modules/electron-to-chromium/package.json
+/var/www/backup/node_modules/browserslist/package.json
+/var/www/backup/node_modules/@humanfs/node/node_modules/@humanfs/core/package.json
+/var/www/backup/node_modules/@humanfs/node/package.json
+/var/www/backup/node_modules/eslint-scope/node_modules/estraverse/package.json
+/var/www/backup/node_modules/eslint-scope/node_modules/esrecurse/package.json
+/var/www/backup/node_modules/eslint-scope/package.json
+/var/www/backup/node_modules/.vite/deps/package.json
+/var/www/backup/node_modules/imurmurhash/package.json
+/var/www/backup/node_modules/json-stable-stringify-without-jsonify/package.json
+/var/www/backup/node_modules/caniuse-lite/package.json
+/var/www/backup/node_modules/react/package.json
+/var/www/backup/node_modules/@popperjs/core/package.json
+/var/www/backup/node_modules/eslint-plugin-react-refresh/package.json
+/var/www/backup/node_modules/vite/node_modules/tinyglobby/package.json
+/var/www/backup/node_modules/vite/node_modules/fdir/package.json
+/var/www/backup/node_modules/vite/node_modules/esbuild/package.json
+/var/www/backup/node_modules/vite/node_modules/rollup/package.json
+/var/www/backup/node_modules/vite/node_modules/rollup/dist/es/package.json
+/var/www/backup/node_modules/vite/node_modules/picomatch/package.json
+/var/www/backup/node_modules/vite/package.json
+/var/www/backup/node_modules/vite/types/package.json
+/var/www/backup/package.json
+/var/www/backup/server/node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/package.json
+/var/www/backup/server/node_modules/@mapbox/node-pre-gyp/package.json
+/var/www/backup/server/node_modules/bcrypt/package.json
+/var/www/backup/server/node_modules/function-bind/package.json
+/var/www/backup/server/node_modules/finalhandler/package.json
+/var/www/backup/server/node_modules/once/package.json
+/var/www/backup/server/node_modules/tar/package.json
+/var/www/backup/server/node_modules/emoji-regex/package.json
+/var/www/backup/server/node_modules/punycode/package.json
+/var/www/backup/server/node_modules/wrappy/package.json
+/var/www/backup/server/node_modules/cookie-signature/package.json
+/var/www/backup/server/node_modules/call-bind-apply-helpers/package.json
+/var/www/backup/server/node_modules/media-typer/package.json
+/var/www/backup/server/node_modules/utils-merge/package.json
+/var/www/backup/server/node_modules/proxy-addr/package.json
+/var/www/backup/server/node_modules/content-type/package.json
+/var/www/backup/server/node_modules/gauge/package.json
+/var/www/backup/server/node_modules/mongodb/package.json
+/var/www/backup/server/node_modules/delegates/package.json
+/var/www/backup/server/node_modules/raw-body/package.json
+/var/www/backup/server/node_modules/axios/package.json
+/var/www/backup/server/node_modules/abbrev/package.json
+/var/www/backup/server/node_modules/body-parser/package.json
+/var/www/backup/server/node_modules/brace-expansion/package.json
+/var/www/backup/server/node_modules/side-channel-map/package.json
+/var/www/backup/server/node_modules/readable-stream/package.json
+/var/www/backup/server/node_modules/signal-exit/package.json
+/var/www/backup/server/node_modules/dunder-proto/package.json
+/var/www/backup/server/node_modules/cors/package.json
+/var/www/backup/server/node_modules/inflight/package.json
+/var/www/backup/server/node_modules/path-to-regexp/package.json
+/var/www/backup/server/node_modules/get-intrinsic/package.json
+/var/www/backup/server/node_modules/safe-buffer/package.json
+/var/www/backup/server/node_modules/combined-stream/package.json
+/var/www/backup/server/node_modules/asynckit/package.json
+/var/www/backup/server/node_modules/@mongodb-js/saslprep/package.json
+/var/www/backup/server/node_modules/debug/package.json
+/var/www/backup/server/node_modules/depd/package.json
+/var/www/backup/server/node_modules/side-channel-list/package.json
+/var/www/backup/server/node_modules/minizlib/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/minizlib/package.json
+/var/www/backup/server/node_modules/methods/package.json
+/var/www/backup/server/node_modules/fs.realpath/package.json
+/var/www/backup/server/node_modules/strip-ansi/package.json
+/var/www/backup/server/node_modules/fresh/package.json
+/var/www/backup/server/node_modules/type-is/package.json
+/var/www/backup/server/node_modules/side-channel/package.json
+/var/www/backup/server/node_modules/side-channel-weakmap/package.json
+/var/www/backup/server/node_modules/has-tostringtag/package.json
+/var/www/backup/server/node_modules/unpipe/package.json
+/var/www/backup/server/node_modules/wide-align/package.json
+/var/www/backup/server/node_modules/es-set-tostringtag/package.json
+/var/www/backup/server/node_modules/setprototypeof/package.json
+/var/www/backup/server/node_modules/memory-pager/package.json
+/var/www/backup/server/node_modules/send/node_modules/ms/package.json
+/var/www/backup/server/node_modules/send/node_modules/encodeurl/package.json
+/var/www/backup/server/node_modules/send/package.json
+/var/www/backup/server/node_modules/concat-map/package.json
+/var/www/backup/server/node_modules/aproba/package.json
+/var/www/backup/server/node_modules/escape-html/package.json
+/var/www/backup/server/node_modules/path-is-absolute/package.json
+/var/www/backup/server/node_modules/bytes/package.json
+/var/www/backup/server/node_modules/proxy-from-env/package.json
+/var/www/backup/server/node_modules/ee-first/package.json
+/var/www/backup/server/node_modules/es-errors/package.json
+/var/www/backup/server/node_modules/detect-libc/package.json
+/var/www/backup/server/node_modules/ansi-regex/package.json
+/var/www/backup/server/node_modules/inherits/package.json
+/var/www/backup/server/node_modules/negotiator/package.json
+/var/www/backup/server/node_modules/serve-static/package.json
+/var/www/backup/server/node_modules/are-we-there-yet/package.json
+/var/www/backup/server/node_modules/merge-descriptors/package.json
+/var/www/backup/server/node_modules/rimraf/package.json
+/var/www/backup/server/node_modules/statuses/package.json
+/var/www/backup/server/node_modules/ipaddr.js/package.json
+/var/www/backup/server/node_modules/follow-redirects/package.json
+/var/www/backup/server/node_modules/util-deprecate/package.json
+/var/www/backup/server/node_modules/content-disposition/package.json
+/var/www/backup/server/node_modules/@types/webidl-conversions/package.json
+/var/www/backup/server/node_modules/@types/whatwg-url/package.json
+/var/www/backup/server/node_modules/semver/package.json
+/var/www/backup/server/node_modules/call-bound/package.json
+/var/www/backup/server/node_modules/hasown/package.json
+/var/www/backup/server/node_modules/mime/package.json
+/var/www/backup/server/node_modules/object-inspect/package.json
+/var/www/backup/server/node_modules/set-blocking/package.json
+/var/www/backup/server/node_modules/es-object-atoms/package.json
+/var/www/backup/server/node_modules/color-support/package.json
+/var/www/backup/server/node_modules/http-errors/package.json
+/var/www/backup/server/node_modules/yallist/package.json
+/var/www/backup/server/node_modules/mime-db/package.json
+/var/www/backup/server/node_modules/has-symbols/package.json
+/var/www/backup/server/node_modules/get-proto/package.json
+/var/www/backup/server/node_modules/string_decoder/package.json
+/var/www/backup/server/node_modules/array-flatten/package.json
+/var/www/backup/server/node_modules/object-assign/package.json
+/var/www/backup/server/node_modules/tr46/package.json
+/var/www/backup/server/node_modules/node-addon-api/package.json
+/var/www/backup/server/node_modules/npmlog/package.json
+/var/www/backup/server/node_modules/console-control-strings/package.json
+/var/www/backup/server/node_modules/on-finished/package.json
+/var/www/backup/server/node_modules/gopd/package.json
+/var/www/backup/server/node_modules/glob/package.json
+/var/www/backup/server/node_modules/deepmerge/package.json
+/var/www/backup/server/node_modules/vary/package.json
+/var/www/backup/server/node_modules/accepts/package.json
+/var/www/backup/server/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/webidl-conversions/package.json
+/var/www/backup/server/node_modules/qs/package.json
+/var/www/backup/server/node_modules/has-unicode/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/tr46/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/webidl-conversions/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/whatwg-url/package.json
+/var/www/backup/server/node_modules/node-fetch/package.json
+/var/www/backup/server/node_modules/sparse-bitfield/package.json
+/var/www/backup/server/node_modules/safer-buffer/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/node_modules/debug/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/node_modules/ms/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/package.json
+/var/www/backup/server/node_modules/is-fullwidth-code-point/package.json
+/var/www/backup/server/node_modules/make-dir/node_modules/semver/package.json
+/var/www/backup/server/node_modules/make-dir/package.json
+/var/www/backup/server/node_modules/dotenv/package.json
+/var/www/backup/server/node_modules/es-define-property/package.json
+/var/www/backup/server/node_modules/iconv-lite/package.json
+/var/www/backup/server/node_modules/delayed-stream/package.json
+/var/www/backup/server/node_modules/destroy/package.json
+/var/www/backup/server/node_modules/minimatch/package.json
+/var/www/backup/server/node_modules/mongodb-connection-string-url/package.json
+/var/www/backup/server/node_modules/string-width/package.json
+/var/www/backup/server/node_modules/ms/package.json
+/var/www/backup/server/node_modules/@sendgrid/mail/package.json
+/var/www/backup/server/node_modules/@sendgrid/helpers/package.json
+/var/www/backup/server/node_modules/@sendgrid/client/package.json
+/var/www/backup/server/node_modules/whatwg-url/package.json
+/var/www/backup/server/node_modules/balanced-match/package.json
+/var/www/backup/server/node_modules/range-parser/package.json
+/var/www/backup/server/node_modules/bson/vendor/text-encoding/package.json
+/var/www/backup/server/node_modules/bson/vendor/base64/package.json
+/var/www/backup/server/node_modules/bson/package.json
+/var/www/backup/server/node_modules/encodeurl/package.json
+/var/www/backup/server/node_modules/mkdirp/package.json
+/var/www/backup/server/node_modules/fs-minipass/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/fs-minipass/package.json
+/var/www/backup/server/node_modules/forwarded/package.json
+/var/www/backup/server/node_modules/math-intrinsics/package.json
+/var/www/backup/server/node_modules/chownr/package.json
+/var/www/backup/server/node_modules/cookie/package.json
+/var/www/backup/server/node_modules/form-data/package.json
+/var/www/backup/server/node_modules/etag/package.json
+/var/www/backup/server/node_modules/express/package.json
+/var/www/backup/server/node_modules/mime-types/package.json
+/var/www/backup/server/node_modules/agent-base/node_modules/debug/package.json
+/var/www/backup/server/node_modules/agent-base/node_modules/ms/package.json
+/var/www/backup/server/node_modules/agent-base/package.json
+/var/www/backup/server/node_modules/nopt/package.json
+/var/www/backup/server/node_modules/toidentifier/package.json
+/var/www/backup/server/node_modules/parseurl/package.json
+/var/www/backup/server/package.json
+/var/www/backup/.vite/deps/package.json
+/var/www/server/node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/package.json
+/var/www/server/node_modules/@mapbox/node-pre-gyp/package.json
+/var/www/server/node_modules/bcrypt/package.json
+/var/www/server/node_modules/readdirp/package.json
+/var/www/server/node_modules/function-bind/package.json
+/var/www/server/node_modules/finalhandler/package.json
+/var/www/server/node_modules/once/package.json
+/var/www/server/node_modules/tar/package.json
+/var/www/server/node_modules/emoji-regex/package.json
+/var/www/server/node_modules/punycode/package.json
+/var/www/server/node_modules/wrappy/package.json
+/var/www/server/node_modules/cookie-signature/package.json
+/var/www/server/node_modules/call-bind-apply-helpers/package.json
+/var/www/server/node_modules/media-typer/package.json
+/var/www/server/node_modules/utils-merge/package.json
+/var/www/server/node_modules/anymatch/package.json
+/var/www/server/node_modules/proxy-addr/package.json
+/var/www/server/node_modules/content-type/package.json
+/var/www/server/node_modules/gauge/package.json
+/var/www/server/node_modules/mongodb/package.json
+/var/www/server/node_modules/delegates/package.json
+/var/www/server/node_modules/raw-body/package.json
+/var/www/server/node_modules/axios/package.json
+/var/www/server/node_modules/abbrev/package.json
+/var/www/server/node_modules/is-glob/package.json
+/var/www/server/node_modules/body-parser/package.json
+/var/www/server/node_modules/is-binary-path/package.json
+/var/www/server/node_modules/brace-expansion/package.json
+/var/www/server/node_modules/side-channel-map/package.json
+/var/www/server/node_modules/readable-stream/package.json
+/var/www/server/node_modules/signal-exit/package.json
+/var/www/server/node_modules/dunder-proto/package.json
+/var/www/server/node_modules/undefsafe/package.json
+/var/www/server/node_modules/cors/package.json
+/var/www/server/node_modules/inflight/package.json
+/var/www/server/node_modules/path-to-regexp/package.json
+/var/www/server/node_modules/get-intrinsic/package.json
+/var/www/server/node_modules/safe-buffer/package.json
+/var/www/server/node_modules/combined-stream/package.json
+/var/www/server/node_modules/asynckit/package.json
+/var/www/server/node_modules/@mongodb-js/saslprep/package.json
+/var/www/server/node_modules/debug/package.json
+/var/www/server/node_modules/depd/package.json
+/var/www/server/node_modules/side-channel-list/package.json
+/var/www/server/node_modules/minizlib/node_modules/minipass/package.json
+/var/www/server/node_modules/minizlib/package.json
+/var/www/server/node_modules/touch/package.json
+/var/www/server/node_modules/chokidar/package.json
+/var/www/server/node_modules/methods/package.json
+/var/www/server/node_modules/fs.realpath/package.json
+/var/www/server/node_modules/strip-ansi/package.json
+/var/www/server/node_modules/fresh/package.json
+/var/www/server/node_modules/type-is/package.json
+/var/www/server/node_modules/side-channel/package.json
+/var/www/server/node_modules/side-channel-weakmap/package.json
+/var/www/server/node_modules/has-tostringtag/package.json
+/var/www/server/node_modules/unpipe/package.json
+/var/www/server/node_modules/wide-align/package.json
+/var/www/server/node_modules/es-set-tostringtag/package.json
+/var/www/server/node_modules/setprototypeof/package.json
+/var/www/server/node_modules/memory-pager/package.json
+/var/www/server/node_modules/supports-color/package.json
+/var/www/server/node_modules/simple-update-notifier/package.json
+/var/www/server/node_modules/send/node_modules/ms/package.json
+/var/www/server/node_modules/send/node_modules/encodeurl/package.json
+/var/www/server/node_modules/send/package.json
+/var/www/server/node_modules/concat-map/package.json
+/var/www/server/node_modules/aproba/package.json
+/var/www/server/node_modules/escape-html/package.json
+/var/www/server/node_modules/path-is-absolute/package.json
+/var/www/server/node_modules/bytes/package.json
+/var/www/server/node_modules/proxy-from-env/package.json
+/var/www/server/node_modules/ee-first/package.json
+/var/www/server/node_modules/es-errors/package.json
+/var/www/server/node_modules/detect-libc/package.json
+/var/www/server/node_modules/ansi-regex/package.json
+/var/www/server/node_modules/inherits/package.json
+/var/www/server/node_modules/negotiator/package.json
+/var/www/server/node_modules/serve-static/package.json
+/var/www/server/node_modules/are-we-there-yet/package.json
+/var/www/server/node_modules/merge-descriptors/package.json
+/var/www/server/node_modules/rimraf/package.json
+/var/www/server/node_modules/statuses/package.json
+/var/www/server/node_modules/ipaddr.js/package.json
+/var/www/server/node_modules/follow-redirects/package.json
+/var/www/server/node_modules/util-deprecate/package.json
+/var/www/server/node_modules/content-disposition/package.json
+/var/www/server/node_modules/@types/webidl-conversions/package.json
+/var/www/server/node_modules/@types/whatwg-url/package.json
+/var/www/server/node_modules/semver/package.json
+/var/www/server/node_modules/call-bound/package.json
+/var/www/server/node_modules/hasown/package.json
+/var/www/server/node_modules/mime/package.json
+/var/www/server/node_modules/object-inspect/package.json
+/var/www/server/node_modules/set-blocking/package.json
+/var/www/server/node_modules/es-object-atoms/package.json
+/var/www/server/node_modules/fill-range/package.json
+/var/www/server/node_modules/color-support/package.json
+/var/www/server/node_modules/http-errors/package.json
+/var/www/server/node_modules/yallist/package.json
+/var/www/server/node_modules/mime-db/package.json
+/var/www/server/node_modules/has-symbols/package.json
+/var/www/server/node_modules/get-proto/package.json
+/var/www/server/node_modules/string_decoder/package.json
+/var/www/server/node_modules/array-flatten/package.json
+/var/www/server/node_modules/binary-extensions/package.json
+/var/www/server/node_modules/object-assign/package.json
+/var/www/server/node_modules/tr46/package.json
+/var/www/server/node_modules/node-addon-api/package.json
+/var/www/server/node_modules/npmlog/package.json
+/var/www/server/node_modules/console-control-strings/package.json
+/var/www/server/node_modules/on-finished/package.json
+/var/www/server/node_modules/gopd/package.json
+/var/www/server/node_modules/ignore-by-default/package.json
+/var/www/server/node_modules/glob-parent/package.json
+/var/www/server/node_modules/glob/package.json
+/var/www/server/node_modules/deepmerge/package.json
+/var/www/server/node_modules/vary/package.json
+/var/www/server/node_modules/accepts/package.json
+/var/www/server/node_modules/minipass/package.json
+/var/www/server/node_modules/webidl-conversions/package.json
+/var/www/server/node_modules/qs/package.json
+/var/www/server/node_modules/has-unicode/package.json
+/var/www/server/node_modules/node-fetch/node_modules/tr46/package.json
+/var/www/server/node_modules/node-fetch/node_modules/webidl-conversions/package.json
+/var/www/server/node_modules/node-fetch/node_modules/whatwg-url/package.json
+/var/www/server/node_modules/node-fetch/package.json
+/var/www/server/node_modules/sparse-bitfield/package.json
+/var/www/server/node_modules/has-flag/package.json
+/var/www/server/node_modules/safer-buffer/package.json
+/var/www/server/node_modules/https-proxy-agent/node_modules/debug/package.json
+/var/www/server/node_modules/https-proxy-agent/node_modules/ms/package.json
+/var/www/server/node_modules/https-proxy-agent/package.json
+/var/www/server/node_modules/is-fullwidth-code-point/package.json
+/var/www/server/node_modules/make-dir/node_modules/semver/package.json
+/var/www/server/node_modules/make-dir/package.json
+/var/www/server/node_modules/dotenv/package.json
+/var/www/server/node_modules/es-define-property/package.json
+/var/www/server/node_modules/iconv-lite/package.json
+/var/www/server/node_modules/pstree.remy/package.json
+/var/www/server/node_modules/delayed-stream/package.json
+/var/www/server/node_modules/destroy/package.json
+/var/www/server/node_modules/braces/package.json
+/var/www/server/node_modules/minimatch/package.json
+/var/www/server/node_modules/mongodb-connection-string-url/package.json
+/var/www/server/node_modules/string-width/package.json
+/var/www/server/node_modules/ms/package.json
+/var/www/server/node_modules/@sendgrid/mail/package.json
+/var/www/server/node_modules/@sendgrid/helpers/package.json
+/var/www/server/node_modules/@sendgrid/client/package.json
+/var/www/server/node_modules/normalize-path/package.json
+/var/www/server/node_modules/to-regex-range/package.json
+/var/www/server/node_modules/whatwg-url/package.json
+/var/www/server/node_modules/picomatch/package.json
+/var/www/server/node_modules/balanced-match/package.json
+/var/www/server/node_modules/is-number/package.json
+/var/www/server/node_modules/range-parser/package.json
+/var/www/server/node_modules/bson/vendor/text-encoding/package.json
+/var/www/server/node_modules/bson/vendor/base64/package.json
+/var/www/server/node_modules/bson/package.json
+/var/www/server/node_modules/encodeurl/package.json
+/var/www/server/node_modules/mkdirp/package.json
+/var/www/server/node_modules/fs-minipass/node_modules/minipass/package.json
+/var/www/server/node_modules/fs-minipass/package.json
+/var/www/server/node_modules/forwarded/package.json
+/var/www/server/node_modules/math-intrinsics/package.json
+/var/www/server/node_modules/chownr/package.json
+/var/www/server/node_modules/cookie/package.json
+/var/www/server/node_modules/form-data/package.json
+/var/www/server/node_modules/etag/package.json
+/var/www/server/node_modules/express/package.json
+/var/www/server/node_modules/mime-types/package.json
+/var/www/server/node_modules/nodemon/node_modules/debug/package.json
+/var/www/server/node_modules/nodemon/node_modules/ms/package.json
+/var/www/server/node_modules/nodemon/package.json
+/var/www/server/node_modules/agent-base/node_modules/debug/package.json
+/var/www/server/node_modules/agent-base/node_modules/ms/package.json
+/var/www/server/node_modules/agent-base/package.json
+/var/www/server/node_modules/nopt/package.json
+/var/www/server/node_modules/toidentifier/package.json
+/var/www/server/node_modules/is-extglob/package.json
+/var/www/server/node_modules/parseurl/package.json
+/var/www/server/package.json
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/client]1;/var/www/client[0m[27m[24m[J[01;32m➜  [36mclient[00m [K[?1h=[?2004h[7msudo find /var/www -type f -name "package.json"[27m
+[K[A[10C[27ms[27mu[27md[27mo[27m [27mf[27mi[27mn[27md[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m [27m-[27mt[27my[27mp[27me[27m [27mf[27m [27m-[27mn[27ma[27mm[27me[27m [27m"[27mp[27ma[27mc[27mk[27ma[27mg[27me[27m.[27mj[27ms[27mo[27mn[27m"[1B[K[?1l>[?2004l
+]2;sudo find /var/www -type f -name "package.json"]1;find/var/www/backup/node_modules/cross-spawn/node_modules/which/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/isexe/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/path-key/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/shebang-command/package.json
+/var/www/backup/node_modules/cross-spawn/node_modules/shebang-regex/package.json
+/var/www/backup/node_modules/cross-spawn/package.json
+/var/www/backup/node_modules/eslint/package.json
+/var/www/backup/node_modules/escape-string-regexp/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flat-cache/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/keyv/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/json-buffer/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flatted/package.json
+/var/www/backup/node_modules/file-entry-cache/node_modules/flatted/cjs/package.json
+/var/www/backup/node_modules/file-entry-cache/package.json
+/var/www/backup/node_modules/@esbuild/linux-x64/package.json
+/var/www/backup/node_modules/picocolors/package.json
+/var/www/backup/node_modules/espree/node_modules/acorn/package.json
+/var/www/backup/node_modules/espree/node_modules/acorn-jsx/package.json
+/var/www/backup/node_modules/espree/package.json
+/var/www/backup/node_modules/react-dom/package.json
+/var/www/backup/node_modules/csstype/package.json
+/var/www/backup/node_modules/is-glob/node_modules/is-extglob/package.json
+/var/www/backup/node_modules/is-glob/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.scandir/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.walk/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@nodelib/fs.stat/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/queue-microtask/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/project-service/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/tsconfig-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fastq/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/semver/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/micromatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/fill-range/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/merge2/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/braces/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/commonjs/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/esm/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/to-regex-range/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/picomatch/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/balanced-match/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/ts-api-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/is-number/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/reusify/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/node_modules/run-parallel/package.json
+/var/www/backup/node_modules/@typescript-eslint/typescript-estree/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/parser/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/type-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/types/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/visitor-keys/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/scope-manager/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/ignore/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/ts-api-utils/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/node_modules/graphemer/package.json
+/var/www/backup/node_modules/@typescript-eslint/eslint-plugin/package.json
+/var/www/backup/node_modules/tailwindcss/package.json
+/var/www/backup/node_modules/debug/node_modules/ms/package.json
+/var/www/backup/node_modules/debug/package.json
+/var/www/backup/node_modules/find-up/node_modules/locate-path/package.json
+/var/www/backup/node_modules/find-up/node_modules/path-exists/package.json
+/var/www/backup/node_modules/find-up/node_modules/yocto-queue/package.json
+/var/www/backup/node_modules/find-up/node_modules/p-locate/package.json
+/var/www/backup/node_modules/find-up/node_modules/p-limit/package.json
+/var/www/backup/node_modules/find-up/package.json
+/var/www/backup/node_modules/normalize-range/package.json
+/var/www/backup/node_modules/autoprefixer/package.json
+/var/www/backup/node_modules/esutils/package.json
+/var/www/backup/node_modules/eslint-visitor-keys/package.json
+/var/www/backup/node_modules/typescript-eslint/package.json
+/var/www/backup/node_modules/@eslint/js/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/type-check/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/levn/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/node_modules/prelude-ls/package.json
+/var/www/backup/node_modules/@eslint/plugin-kit/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/resolve-from/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/globals/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/import-fresh/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/callsites/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/argparse/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/parent-module/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/strip-json-comments/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/node_modules/js-yaml/package.json
+/var/www/backup/node_modules/@eslint/eslintrc/package.json
+/var/www/backup/node_modules/@eslint/core/node_modules/@types/json-schema/package.json
+/var/www/backup/node_modules/@eslint/core/package.json
+/var/www/backup/node_modules/@eslint/config-helpers/package.json
+/var/www/backup/node_modules/@eslint/config-array/node_modules/@eslint/object-schema/package.json
+/var/www/backup/node_modules/@eslint/config-array/package.json
+/var/www/backup/node_modules/postcss-value-parser/package.json
+/var/www/backup/node_modules/bootstrap/package.json
+/var/www/backup/node_modules/undici-types/package.json
+/var/www/backup/node_modules/fast-deep-equal/package.json
+/var/www/backup/node_modules/lodash.merge/package.json
+/var/www/backup/node_modules/ignore/package.json
+/var/www/backup/node_modules/@types/react-dom/package.json
+/var/www/backup/node_modules/@types/node/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/parser/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/types/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/helper-validator-identifier/package.json
+/var/www/backup/node_modules/@types/babel__core/node_modules/@babel/helper-string-parser/package.json
+/var/www/backup/node_modules/@types/babel__core/package.json
+/var/www/backup/node_modules/@types/estree/package.json
+/var/www/backup/node_modules/@types/react/package.json
+/var/www/backup/node_modules/ajv/node_modules/punycode/package.json
+/var/www/backup/node_modules/ajv/node_modules/uri-js/package.json
+/var/www/backup/node_modules/ajv/node_modules/json-schema-traverse/package.json
+/var/www/backup/node_modules/ajv/node_modules/fast-json-stable-stringify/package.json
+/var/www/backup/node_modules/ajv/package.json
+/var/www/backup/node_modules/fraction.js/package.json
+/var/www/backup/node_modules/esquery/node_modules/estraverse/package.json
+/var/www/backup/node_modules/esquery/package.json
+/var/www/backup/node_modules/eslint-plugin-react-hooks/package.json
+/var/www/backup/node_modules/@rollup/rollup-linux-x64-musl/package.json
+/var/www/backup/node_modules/@rollup/rollup-linux-x64-gnu/package.json
+/var/www/backup/node_modules/@vitejs/plugin-react/package.json
+/var/www/backup/node_modules/natural-compare/package.json
+/var/www/backup/node_modules/scheduler/package.json
+/var/www/backup/node_modules/@rolldown/pluginutils/package.json
+/var/www/backup/node_modules/globals/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/async/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/url-alphabet/package.json
+/var/www/backup/node_modules/postcss/node_modules/nanoid/non-secure/package.json
+/var/www/backup/node_modules/postcss/node_modules/source-map-js/package.json
+/var/www/backup/node_modules/postcss/package.json
+/var/www/backup/node_modules/glob-parent/package.json
+/var/www/backup/node_modules/chalk/node_modules/supports-color/package.json
+/var/www/backup/node_modules/chalk/node_modules/color-convert/package.json
+/var/www/backup/node_modules/chalk/node_modules/has-flag/package.json
+/var/www/backup/node_modules/chalk/node_modules/ansi-styles/package.json
+/var/www/backup/node_modules/chalk/node_modules/color-name/package.json
+/var/www/backup/node_modules/chalk/package.json
+/var/www/backup/node_modules/@eslint-community/regexpp/package.json
+/var/www/backup/node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/package.json
+/var/www/backup/node_modules/@eslint-community/eslint-utils/package.json
+/var/www/backup/node_modules/@humanwhocodes/module-importer/package.json
+/var/www/backup/node_modules/@humanwhocodes/retry/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/jsesc/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/remapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/trace-mapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/gen-mapping/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/sourcemap-codec/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@jridgewell/resolve-uri/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/js-tokens/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/lru-cache/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/semver/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/yallist/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/traverse/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/generator/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-module-transforms/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-globals/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/parser/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-module-imports/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/types/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/compat-data/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-validator-identifier/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-validator-option/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/template/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-string-parser/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/code-frame/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helper-compilation-targets/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/@babel/helpers/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/gensync/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/convert-source-map/package.json
+/var/www/backup/node_modules/@babel/core/node_modules/json5/package.json
+/var/www/backup/node_modules/@babel/core/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-self/node_modules/@babel/helper-plugin-utils/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-self/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-source/node_modules/@babel/helper-plugin-utils/package.json
+/var/www/backup/node_modules/@babel/plugin-transform-react-jsx-source/package.json
+/var/www/backup/node_modules/react-refresh/package.json
+/var/www/backup/node_modules/minimatch/node_modules/brace-expansion/package.json
+/var/www/backup/node_modules/minimatch/node_modules/concat-map/package.json
+/var/www/backup/node_modules/minimatch/node_modules/balanced-match/package.json
+/var/www/backup/node_modules/minimatch/package.json
+/var/www/backup/node_modules/optionator/node_modules/type-check/package.json
+/var/www/backup/node_modules/optionator/node_modules/fast-levenshtein/package.json
+/var/www/backup/node_modules/optionator/node_modules/deep-is/package.json
+/var/www/backup/node_modules/optionator/node_modules/word-wrap/package.json
+/var/www/backup/node_modules/optionator/node_modules/levn/package.json
+/var/www/backup/node_modules/optionator/node_modules/prelude-ls/package.json
+/var/www/backup/node_modules/optionator/package.json
+/var/www/backup/node_modules/typescript/package.json
+/var/www/backup/node_modules/browserslist/node_modules/baseline-browser-mapping/package.json
+/var/www/backup/node_modules/browserslist/node_modules/escalade/package.json
+/var/www/backup/node_modules/browserslist/node_modules/update-browserslist-db/package.json
+/var/www/backup/node_modules/browserslist/node_modules/node-releases/package.json
+/var/www/backup/node_modules/browserslist/node_modules/electron-to-chromium/package.json
+/var/www/backup/node_modules/browserslist/package.json
+/var/www/backup/node_modules/@humanfs/node/node_modules/@humanfs/core/package.json
+/var/www/backup/node_modules/@humanfs/node/package.json
+/var/www/backup/node_modules/eslint-scope/node_modules/estraverse/package.json
+/var/www/backup/node_modules/eslint-scope/node_modules/esrecurse/package.json
+/var/www/backup/node_modules/eslint-scope/package.json
+/var/www/backup/node_modules/.vite/deps/package.json
+/var/www/backup/node_modules/imurmurhash/package.json
+/var/www/backup/node_modules/json-stable-stringify-without-jsonify/package.json
+/var/www/backup/node_modules/caniuse-lite/package.json
+/var/www/backup/node_modules/react/package.json
+/var/www/backup/node_modules/@popperjs/core/package.json
+/var/www/backup/node_modules/eslint-plugin-react-refresh/package.json
+/var/www/backup/node_modules/vite/node_modules/tinyglobby/package.json
+/var/www/backup/node_modules/vite/node_modules/fdir/package.json
+/var/www/backup/node_modules/vite/node_modules/esbuild/package.json
+/var/www/backup/node_modules/vite/node_modules/rollup/package.json
+/var/www/backup/node_modules/vite/node_modules/rollup/dist/es/package.json
+/var/www/backup/node_modules/vite/node_modules/picomatch/package.json
+/var/www/backup/node_modules/vite/package.json
+/var/www/backup/node_modules/vite/types/package.json
+/var/www/backup/package.json
+/var/www/backup/server/node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/package.json
+/var/www/backup/server/node_modules/@mapbox/node-pre-gyp/package.json
+/var/www/backup/server/node_modules/bcrypt/package.json
+/var/www/backup/server/node_modules/function-bind/package.json
+/var/www/backup/server/node_modules/finalhandler/package.json
+/var/www/backup/server/node_modules/once/package.json
+/var/www/backup/server/node_modules/tar/package.json
+/var/www/backup/server/node_modules/emoji-regex/package.json
+/var/www/backup/server/node_modules/punycode/package.json
+/var/www/backup/server/node_modules/wrappy/package.json
+/var/www/backup/server/node_modules/cookie-signature/package.json
+/var/www/backup/server/node_modules/call-bind-apply-helpers/package.json
+/var/www/backup/server/node_modules/media-typer/package.json
+/var/www/backup/server/node_modules/utils-merge/package.json
+/var/www/backup/server/node_modules/proxy-addr/package.json
+/var/www/backup/server/node_modules/content-type/package.json
+/var/www/backup/server/node_modules/gauge/package.json
+/var/www/backup/server/node_modules/mongodb/package.json
+/var/www/backup/server/node_modules/delegates/package.json
+/var/www/backup/server/node_modules/raw-body/package.json
+/var/www/backup/server/node_modules/axios/package.json
+/var/www/backup/server/node_modules/abbrev/package.json
+/var/www/backup/server/node_modules/body-parser/package.json
+/var/www/backup/server/node_modules/brace-expansion/package.json
+/var/www/backup/server/node_modules/side-channel-map/package.json
+/var/www/backup/server/node_modules/readable-stream/package.json
+/var/www/backup/server/node_modules/signal-exit/package.json
+/var/www/backup/server/node_modules/dunder-proto/package.json
+/var/www/backup/server/node_modules/cors/package.json
+/var/www/backup/server/node_modules/inflight/package.json
+/var/www/backup/server/node_modules/path-to-regexp/package.json
+/var/www/backup/server/node_modules/get-intrinsic/package.json
+/var/www/backup/server/node_modules/safe-buffer/package.json
+/var/www/backup/server/node_modules/combined-stream/package.json
+/var/www/backup/server/node_modules/asynckit/package.json
+/var/www/backup/server/node_modules/@mongodb-js/saslprep/package.json
+/var/www/backup/server/node_modules/debug/package.json
+/var/www/backup/server/node_modules/depd/package.json
+/var/www/backup/server/node_modules/side-channel-list/package.json
+/var/www/backup/server/node_modules/minizlib/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/minizlib/package.json
+/var/www/backup/server/node_modules/methods/package.json
+/var/www/backup/server/node_modules/fs.realpath/package.json
+/var/www/backup/server/node_modules/strip-ansi/package.json
+/var/www/backup/server/node_modules/fresh/package.json
+/var/www/backup/server/node_modules/type-is/package.json
+/var/www/backup/server/node_modules/side-channel/package.json
+/var/www/backup/server/node_modules/side-channel-weakmap/package.json
+/var/www/backup/server/node_modules/has-tostringtag/package.json
+/var/www/backup/server/node_modules/unpipe/package.json
+/var/www/backup/server/node_modules/wide-align/package.json
+/var/www/backup/server/node_modules/es-set-tostringtag/package.json
+/var/www/backup/server/node_modules/setprototypeof/package.json
+/var/www/backup/server/node_modules/memory-pager/package.json
+/var/www/backup/server/node_modules/send/node_modules/ms/package.json
+/var/www/backup/server/node_modules/send/node_modules/encodeurl/package.json
+/var/www/backup/server/node_modules/send/package.json
+/var/www/backup/server/node_modules/concat-map/package.json
+/var/www/backup/server/node_modules/aproba/package.json
+/var/www/backup/server/node_modules/escape-html/package.json
+/var/www/backup/server/node_modules/path-is-absolute/package.json
+/var/www/backup/server/node_modules/bytes/package.json
+/var/www/backup/server/node_modules/proxy-from-env/package.json
+/var/www/backup/server/node_modules/ee-first/package.json
+/var/www/backup/server/node_modules/es-errors/package.json
+/var/www/backup/server/node_modules/detect-libc/package.json
+/var/www/backup/server/node_modules/ansi-regex/package.json
+/var/www/backup/server/node_modules/inherits/package.json
+/var/www/backup/server/node_modules/negotiator/package.json
+/var/www/backup/server/node_modules/serve-static/package.json
+/var/www/backup/server/node_modules/are-we-there-yet/package.json
+/var/www/backup/server/node_modules/merge-descriptors/package.json
+/var/www/backup/server/node_modules/rimraf/package.json
+/var/www/backup/server/node_modules/statuses/package.json
+/var/www/backup/server/node_modules/ipaddr.js/package.json
+/var/www/backup/server/node_modules/follow-redirects/package.json
+/var/www/backup/server/node_modules/util-deprecate/package.json
+/var/www/backup/server/node_modules/content-disposition/package.json
+/var/www/backup/server/node_modules/@types/webidl-conversions/package.json
+/var/www/backup/server/node_modules/@types/whatwg-url/package.json
+/var/www/backup/server/node_modules/semver/package.json
+/var/www/backup/server/node_modules/call-bound/package.json
+/var/www/backup/server/node_modules/hasown/package.json
+/var/www/backup/server/node_modules/mime/package.json
+/var/www/backup/server/node_modules/object-inspect/package.json
+/var/www/backup/server/node_modules/set-blocking/package.json
+/var/www/backup/server/node_modules/es-object-atoms/package.json
+/var/www/backup/server/node_modules/color-support/package.json
+/var/www/backup/server/node_modules/http-errors/package.json
+/var/www/backup/server/node_modules/yallist/package.json
+/var/www/backup/server/node_modules/mime-db/package.json
+/var/www/backup/server/node_modules/has-symbols/package.json
+/var/www/backup/server/node_modules/get-proto/package.json
+/var/www/backup/server/node_modules/string_decoder/package.json
+/var/www/backup/server/node_modules/array-flatten/package.json
+/var/www/backup/server/node_modules/object-assign/package.json
+/var/www/backup/server/node_modules/tr46/package.json
+/var/www/backup/server/node_modules/node-addon-api/package.json
+/var/www/backup/server/node_modules/npmlog/package.json
+/var/www/backup/server/node_modules/console-control-strings/package.json
+/var/www/backup/server/node_modules/on-finished/package.json
+/var/www/backup/server/node_modules/gopd/package.json
+/var/www/backup/server/node_modules/glob/package.json
+/var/www/backup/server/node_modules/deepmerge/package.json
+/var/www/backup/server/node_modules/vary/package.json
+/var/www/backup/server/node_modules/accepts/package.json
+/var/www/backup/server/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/webidl-conversions/package.json
+/var/www/backup/server/node_modules/qs/package.json
+/var/www/backup/server/node_modules/has-unicode/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/tr46/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/webidl-conversions/package.json
+/var/www/backup/server/node_modules/node-fetch/node_modules/whatwg-url/package.json
+/var/www/backup/server/node_modules/node-fetch/package.json
+/var/www/backup/server/node_modules/sparse-bitfield/package.json
+/var/www/backup/server/node_modules/safer-buffer/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/node_modules/debug/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/node_modules/ms/package.json
+/var/www/backup/server/node_modules/https-proxy-agent/package.json
+/var/www/backup/server/node_modules/is-fullwidth-code-point/package.json
+/var/www/backup/server/node_modules/make-dir/node_modules/semver/package.json
+/var/www/backup/server/node_modules/make-dir/package.json
+/var/www/backup/server/node_modules/dotenv/package.json
+/var/www/backup/server/node_modules/es-define-property/package.json
+/var/www/backup/server/node_modules/iconv-lite/package.json
+/var/www/backup/server/node_modules/delayed-stream/package.json
+/var/www/backup/server/node_modules/destroy/package.json
+/var/www/backup/server/node_modules/minimatch/package.json
+/var/www/backup/server/node_modules/mongodb-connection-string-url/package.json
+/var/www/backup/server/node_modules/string-width/package.json
+/var/www/backup/server/node_modules/ms/package.json
+/var/www/backup/server/node_modules/@sendgrid/mail/package.json
+/var/www/backup/server/node_modules/@sendgrid/helpers/package.json
+/var/www/backup/server/node_modules/@sendgrid/client/package.json
+/var/www/backup/server/node_modules/whatwg-url/package.json
+/var/www/backup/server/node_modules/balanced-match/package.json
+/var/www/backup/server/node_modules/range-parser/package.json
+/var/www/backup/server/node_modules/bson/vendor/text-encoding/package.json
+/var/www/backup/server/node_modules/bson/vendor/base64/package.json
+/var/www/backup/server/node_modules/bson/package.json
+/var/www/backup/server/node_modules/encodeurl/package.json
+/var/www/backup/server/node_modules/mkdirp/package.json
+/var/www/backup/server/node_modules/fs-minipass/node_modules/minipass/package.json
+/var/www/backup/server/node_modules/fs-minipass/package.json
+/var/www/backup/server/node_modules/forwarded/package.json
+/var/www/backup/server/node_modules/math-intrinsics/package.json
+/var/www/backup/server/node_modules/chownr/package.json
+/var/www/backup/server/node_modules/cookie/package.json
+/var/www/backup/server/node_modules/form-data/package.json
+/var/www/backup/server/node_modules/etag/package.json
+/var/www/backup/server/node_modules/express/package.json
+/var/www/backup/server/node_modules/mime-types/package.json
+/var/www/backup/server/node_modules/agent-base/node_modules/debug/package.json
+/var/www/backup/server/node_modules/agent-base/node_modules/ms/package.json
+/var/www/backup/server/node_modules/agent-base/package.json
+/var/www/backup/server/node_modules/nopt/package.json
+/var/www/backup/server/node_modules/toidentifier/package.json
+/var/www/backup/server/node_modules/parseurl/package.json
+/var/www/backup/server/package.json
+/var/www/backup/.vite/deps/package.json
+/var/www/server/node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/package.json
+/var/www/server/node_modules/@mapbox/node-pre-gyp/package.json
+/var/www/server/node_modules/bcrypt/package.json
+/var/www/server/node_modules/readdirp/package.json
+/var/www/server/node_modules/function-bind/package.json
+/var/www/server/node_modules/finalhandler/package.json
+/var/www/server/node_modules/once/package.json
+/var/www/server/node_modules/tar/package.json
+/var/www/server/node_modules/emoji-regex/package.json
+/var/www/server/node_modules/punycode/package.json
+/var/www/server/node_modules/wrappy/package.json
+/var/www/server/node_modules/cookie-signature/package.json
+/var/www/server/node_modules/call-bind-apply-helpers/package.json
+/var/www/server/node_modules/media-typer/package.json
+/var/www/server/node_modules/utils-merge/package.json
+/var/www/server/node_modules/anymatch/package.json
+/var/www/server/node_modules/proxy-addr/package.json
+/var/www/server/node_modules/content-type/package.json
+/var/www/server/node_modules/gauge/package.json
+/var/www/server/node_modules/mongodb/package.json
+/var/www/server/node_modules/delegates/package.json
+/var/www/server/node_modules/raw-body/package.json
+/var/www/server/node_modules/axios/package.json
+/var/www/server/node_modules/abbrev/package.json
+/var/www/server/node_modules/is-glob/package.json
+/var/www/server/node_modules/body-parser/package.json
+/var/www/server/node_modules/is-binary-path/package.json
+/var/www/server/node_modules/brace-expansion/package.json
+/var/www/server/node_modules/side-channel-map/package.json
+/var/www/server/node_modules/readable-stream/package.json
+/var/www/server/node_modules/signal-exit/package.json
+/var/www/server/node_modules/dunder-proto/package.json
+/var/www/server/node_modules/undefsafe/package.json
+/var/www/server/node_modules/cors/package.json
+/var/www/server/node_modules/inflight/package.json
+/var/www/server/node_modules/path-to-regexp/package.json
+/var/www/server/node_modules/get-intrinsic/package.json
+/var/www/server/node_modules/safe-buffer/package.json
+/var/www/server/node_modules/combined-stream/package.json
+/var/www/server/node_modules/asynckit/package.json
+/var/www/server/node_modules/@mongodb-js/saslprep/package.json
+/var/www/server/node_modules/debug/package.json
+/var/www/server/node_modules/depd/package.json
+/var/www/server/node_modules/side-channel-list/package.json
+/var/www/server/node_modules/minizlib/node_modules/minipass/package.json
+/var/www/server/node_modules/minizlib/package.json
+/var/www/server/node_modules/touch/package.json
+/var/www/server/node_modules/chokidar/package.json
+/var/www/server/node_modules/methods/package.json
+/var/www/server/node_modules/fs.realpath/package.json
+/var/www/server/node_modules/strip-ansi/package.json
+/var/www/server/node_modules/fresh/package.json
+/var/www/server/node_modules/type-is/package.json
+/var/www/server/node_modules/side-channel/package.json
+/var/www/server/node_modules/side-channel-weakmap/package.json
+/var/www/server/node_modules/has-tostringtag/package.json
+/var/www/server/node_modules/unpipe/package.json
+/var/www/server/node_modules/wide-align/package.json
+/var/www/server/node_modules/es-set-tostringtag/package.json
+/var/www/server/node_modules/setprototypeof/package.json
+/var/www/server/node_modules/memory-pager/package.json
+/var/www/server/node_modules/supports-color/package.json
+/var/www/server/node_modules/simple-update-notifier/package.json
+/var/www/server/node_modules/send/node_modules/ms/package.json
+/var/www/server/node_modules/send/node_modules/encodeurl/package.json
+/var/www/server/node_modules/send/package.json
+/var/www/server/node_modules/concat-map/package.json
+/var/www/server/node_modules/aproba/package.json
+/var/www/server/node_modules/escape-html/package.json
+/var/www/server/node_modules/path-is-absolute/package.json
+/var/www/server/node_modules/bytes/package.json
+/var/www/server/node_modules/proxy-from-env/package.json
+/var/www/server/node_modules/ee-first/package.json
+/var/www/server/node_modules/es-errors/package.json
+/var/www/server/node_modules/detect-libc/package.json
+/var/www/server/node_modules/ansi-regex/package.json
+/var/www/server/node_modules/inherits/package.json
+/var/www/server/node_modules/negotiator/package.json
+/var/www/server/node_modules/serve-static/package.json
+/var/www/server/node_modules/are-we-there-yet/package.json
+/var/www/server/node_modules/merge-descriptors/package.json
+/var/www/server/node_modules/rimraf/package.json
+/var/www/server/node_modules/statuses/package.json
+/var/www/server/node_modules/ipaddr.js/package.json
+/var/www/server/node_modules/follow-redirects/package.json
+/var/www/server/node_modules/util-deprecate/package.json
+/var/www/server/node_modules/content-disposition/package.json
+/var/www/server/node_modules/@types/webidl-conversions/package.json
+/var/www/server/node_modules/@types/whatwg-url/package.json
+/var/www/server/node_modules/semver/package.json
+/var/www/server/node_modules/call-bound/package.json
+/var/www/server/node_modules/hasown/package.json
+/var/www/server/node_modules/mime/package.json
+/var/www/server/node_modules/object-inspect/package.json
+/var/www/server/node_modules/set-blocking/package.json
+/var/www/server/node_modules/es-object-atoms/package.json
+/var/www/server/node_modules/fill-range/package.json
+/var/www/server/node_modules/color-support/package.json
+/var/www/server/node_modules/http-errors/package.json
+/var/www/server/node_modules/yallist/package.json
+/var/www/server/node_modules/mime-db/package.json
+/var/www/server/node_modules/has-symbols/package.json
+/var/www/server/node_modules/get-proto/package.json
+/var/www/server/node_modules/string_decoder/package.json
+/var/www/server/node_modules/array-flatten/package.json
+/var/www/server/node_modules/binary-extensions/package.json
+/var/www/server/node_modules/object-assign/package.json
+/var/www/server/node_modules/tr46/package.json
+/var/www/server/node_modules/node-addon-api/package.json
+/var/www/server/node_modules/npmlog/package.json
+/var/www/server/node_modules/console-control-strings/package.json
+/var/www/server/node_modules/on-finished/package.json
+/var/www/server/node_modules/gopd/package.json
+/var/www/server/node_modules/ignore-by-default/package.json
+/var/www/server/node_modules/glob-parent/package.json
+/var/www/server/node_modules/glob/package.json
+/var/www/server/node_modules/deepmerge/package.json
+/var/www/server/node_modules/vary/package.json
+/var/www/server/node_modules/accepts/package.json
+/var/www/server/node_modules/minipass/package.json
+/var/www/server/node_modules/webidl-conversions/package.json
+/var/www/server/node_modules/qs/package.json
+/var/www/server/node_modules/has-unicode/package.json
+/var/www/server/node_modules/node-fetch/node_modules/tr46/package.json
+/var/www/server/node_modules/node-fetch/node_modules/webidl-conversions/package.json
+/var/www/server/node_modules/node-fetch/node_modules/whatwg-url/package.json
+/var/www/server/node_modules/node-fetch/package.json
+/var/www/server/node_modules/sparse-bitfield/package.json
+/var/www/server/node_modules/has-flag/package.json
+/var/www/server/node_modules/safer-buffer/package.json
+/var/www/server/node_modules/https-proxy-agent/node_modules/debug/package.json
+/var/www/server/node_modules/https-proxy-agent/node_modules/ms/package.json
+/var/www/server/node_modules/https-proxy-agent/package.json
+/var/www/server/node_modules/is-fullwidth-code-point/package.json
+/var/www/server/node_modules/make-dir/node_modules/semver/package.json
+/var/www/server/node_modules/make-dir/package.json
+/var/www/server/node_modules/dotenv/package.json
+/var/www/server/node_modules/es-define-property/package.json
+/var/www/server/node_modules/iconv-lite/package.json
+/var/www/server/node_modules/pstree.remy/package.json
+/var/www/server/node_modules/delayed-stream/package.json
+/var/www/server/node_modules/destroy/package.json
+/var/www/server/node_modules/braces/package.json
+/var/www/server/node_modules/minimatch/package.json
+/var/www/server/node_modules/mongodb-connection-string-url/package.json
+/var/www/server/node_modules/string-width/package.json
+/var/www/server/node_modules/ms/package.json
+/var/www/server/node_modules/@sendgrid/mail/package.json
+/var/www/server/node_modules/@sendgrid/helpers/package.json
+/var/www/server/node_modules/@sendgrid/client/package.json
+/var/www/server/node_modules/normalize-path/package.json
+/var/www/server/node_modules/to-regex-range/package.json
+/var/www/server/node_modules/whatwg-url/package.json
+/var/www/server/node_modules/picomatch/package.json
+/var/www/server/node_modules/balanced-match/package.json
+/var/www/server/node_modules/is-number/package.json
+/var/www/server/node_modules/range-parser/package.json
+/var/www/server/node_modules/bson/vendor/text-encoding/package.json
+/var/www/server/node_modules/bson/vendor/base64/package.json
+/var/www/server/node_modules/bson/package.json
+/var/www/server/node_modules/encodeurl/package.json
+/var/www/server/node_modules/mkdirp/package.json
+/var/www/server/node_modules/fs-minipass/node_modules/minipass/package.json
+/var/www/server/node_modules/fs-minipass/package.json
+/var/www/server/node_modules/forwarded/package.json
+/var/www/server/node_modules/math-intrinsics/package.json
+/var/www/server/node_modules/chownr/package.json
+/var/www/server/node_modules/cookie/package.json
+/var/www/server/node_modules/form-data/package.json
+/var/www/server/node_modules/etag/package.json
+/var/www/server/node_modules/express/package.json
+/var/www/server/node_modules/mime-types/package.json
+/var/www/server/node_modules/nodemon/node_modules/debug/package.json
+/var/www/server/node_modules/nodemon/node_modules/ms/package.json
+/var/www/server/node_modules/nodemon/package.json
+/var/www/server/node_modules/agent-base/node_modules/debug/package.json
+/var/www/server/node_modules/agent-base/node_modules/ms/package.json
+/var/www/server/node_modules/agent-base/package.json
+/var/www/server/node_modules/nopt/package.json
+/var/www/server/node_modules/toidentifier/package.json
+/var/www/server/node_modules/is-extglob/package.json
+/var/www/server/node_modules/parseurl/package.json
+/var/www/server/package.json
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/client]1;/var/www/client[0m[27m[24m[J[01;32m➜  [36mclient[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www]1;/var/www[0m[27m[24m[J[01;32m➜  [36mwww[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls --color=tty]1;ls[0m[01;34mLargeProject[0m  [01;34mbackup[0m  [01;34mclient[0m  package-lock.json  [01;34mserver[0m  [01;34msomethingsimple.site[0m
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www]1;/var/www[0m[27m[24m[J[01;32m➜  [36mwww[00m [K[?1h=[?2004h[7msudo ls -l /var/www/client[27m
+[K[A[7C[27ms[27mu[27md[27mo[27m [27ml[27ms[27m [27m-[27ml[27m [27m/[27mv[27ma[27mr[27m/[27mw[27mw[27mw[27m/[27mc[27ml[27mi[27me[27mn[27mt[1B[K[?1l>[?2004l
+]2;sudo ls -l /var/www/client]1;lstotal 8
+-rw-r--r-- 1 root root   85 Nov 15 03:10 package-lock.json
+drwxr-xr-x 9 root root 4096 Nov 15 02:50 src
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www]1;/var/www[0m[27m[24m[J[01;32m➜  [36mwww[00m [K[?1h=[?2004hccd server[?1l>[?2004l
+]2;cd server]1;cd[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;32m➜  [36mserver[00m [K[?1h=[?2004h[7mnpm install[27m
+[7mnpm run dev     # if exists[27m[K
+[7mnpm start       # if no dev script[27m[K[A[A[24D[27mn[27mp[27mm[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[1B[27mn[27mp[27mm[27m [27mr[27mu[27mn[27m [27md[27me[27mv[27m [27m [27m [27m [27m [27m#[27m [27mi[27mf[27m [27me[27mx[27mi[27ms[27mt[27ms[1B[27mn[27mp[27mm[27m [27ms[27mt[27ma[27mr[27mt[27m [27m [27m [27m [27m [27m [27m [27m#[27m [27mi[27mf[27m [27mn[27mo[27m [27md[27me[27mv[27m [27ms[27mc[27mr[27mi[27mp[27mt[?1l>[?2004l
+]2;npm install; npm run dev; npm start]1;npm[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K
+up to date, audited 180 packages in 799ms
+[1G[0K⠴[1G[0K
+[1G[0K⠴[1G[0K24 packages are looking for funding
+[1G[0K⠴[1G[0K  run `npm fund` for details
+[1G[0K⠴[1G[0K
+found [32m[1m0[22m[39m vulnerabilities
+[1G[0K⠴[1G[0K
+> budget-manager-api@1.0.0 dev
+> nodemon src/app.js
+
+[1G[0K[33m[nodemon] 3.1.11[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5000
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m
+[90m    at listenInCluster (node:net:1997:12)[39m
+[90m    at Server.listen (node:net:2102:7)[39m
+    at Function.listen [90m(/var/www/server/[39mnode_modules/[4mexpress[24m/lib/application.js:635:24[90m)[39m
+    at [90m/var/www/server/[39msrc/app.js:50:7
+    at Object.<anonymous> [90m(/var/www/server/[39msrc/app.js:55:3[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1706:14)[39m
+[90m    at Object..js (node:internal/modules/cjs/loader:1839:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1441:32)[39m
+[90m    at Function._load (node:internal/modules/cjs/loader:1263:12)[39m
+Emitted 'error' event on Server instance at:
+[90m    at emitErrorNT (node:net:1976:8)[39m
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-98[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m5000[39m
+}
+
+Node.js v22.21.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J[01;31m➜  [36mserver[00m [K[?1h=[?2004h[?2004l
+[1m[7m#[27m[1m[0m                                                                                ]2;root@mern10onubuntu2204-s-1vcpu-1gb-nyc3-01:/var/www/server]1;/var/www/server[0m[27m[24m[J

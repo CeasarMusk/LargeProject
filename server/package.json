@@ -1,0 +1,21 @@
+{
+  "name": "budget-manager-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongodb": "^6.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
